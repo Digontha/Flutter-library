@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "../Shared/SideBar/Sidebar";
+import Navbar from "../Shared/Navbar/Navbar";
 
 
 const Root = () => {
@@ -7,21 +8,19 @@ const Root = () => {
         <>
             <header>
 
-                <section className="flex">
-                    <div>
-                        <Sidebar></Sidebar>
+                <section className="grid grid-cols-8">
+                    <div className="col-span-1 md:border-r-2">
+                        <Sidebar />
+                        
                     </div>
-
-                    <div>
-                        <Outlet></Outlet>
+    
+                    
+                    <div className="mt-10 col-span-7 px-10">
+                        <Navbar />
+                        <Outlet />
                     </div>
                 </section>
 
-
-
-                <section>
-
-                </section>
 
             </header>
         </>
