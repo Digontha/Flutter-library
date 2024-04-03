@@ -8,6 +8,7 @@ import { FaCode } from "react-icons/fa6";
 import { GiSelfLove } from "react-icons/gi";
 import { IoMdPeople } from "react-icons/io";
 import { IoReorderThree } from "react-icons/io5";
+import { GiCrossedBones } from "react-icons/gi";
 const Sidebar = () => {
 
 
@@ -20,9 +21,9 @@ const Sidebar = () => {
     return (
         <>
 
-            <header className="p-10">
+            <header className="lg:p-10">
 
-                <nav className="hidden lg:flex md:flex">
+                <nav className="hidden lg:flex ">
                     <section>
                         <section>
                             <div className="mr-2">
@@ -145,13 +146,13 @@ const Sidebar = () => {
                     </section>
                 </nav>
 
-                <div className="lg:hidden md:hidden">
+                <div className="lg:hidden">
 
                     <button
                         className="fixed z-50 top-0 left-0 m-4 p-2 bg-gray-700 text-white rounded-full focus:outline-none"
                         onClick={toggleDrawer}
                     >
-                        {isOpen ? 'Close' : <p><IoReorderThree></IoReorderThree></p>}
+                        {isOpen ? <p><GiCrossedBones></GiCrossedBones></p> : <p><IoReorderThree></IoReorderThree></p>}
                     </button>
 
 
@@ -160,7 +161,7 @@ const Sidebar = () => {
                             }`}
                     >
 
-                        <div className="p-4 bg-gray-800">Drawer Header</div>
+                        <div className="p-4 bg-gray-300"><img src={logo} alt="" /></div>
 
 
                         <nav className="mt-4">

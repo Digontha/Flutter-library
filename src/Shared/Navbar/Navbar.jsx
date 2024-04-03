@@ -21,9 +21,9 @@ const Navbar = () => {
     }, [theme])
     return (
         <>
-            <nav className="flex justify-between items-center">
-                <div className="flex gap-3 items-center border w-[300px] rounded-full px-6 bg-[#F0F0F0]">
-                    <FaSearchengin className="text-xl" />
+            <nav className="flex justify-between items-center  ">
+                <div className="flex gap-3 items-center border md:w-[300px] w-[100px]  rounded-full lg:px-6 bg-[#F0F0F0] mt-3 lg:mt-0">
+                    <FaSearchengin className="text-xl ml-4" />
                     <input
                         type="text"
                         placeholder="Search..."
@@ -33,7 +33,7 @@ const Navbar = () => {
 
 
 
-                <div className="flex items-center gap-3">
+                <div className="flex  items-center gap-3 mt-3  lg:mt-0">
                     <label className="swap swap-rotate">
 
                         <input type="checkbox" onClick={handleToggle} />

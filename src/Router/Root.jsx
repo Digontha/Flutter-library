@@ -8,14 +8,14 @@ const Root = () => {
         <>
             <header>
 
-                <section className="grid grid-cols-8">
-                    <div className="col-span-1 md:border-r-2">
+                <section className="lg:grid lg:grid-cols-8">
+                    <div className="lg:col-span-1 lg:border-r-2">
                         <Sidebar />
                         
                     </div>
     
                     
-                    <div className="mt-10 col-span-7 px-10">
+                    <div className="mt-10 lg:col-span-7 px-1 lg:px-10">
                         <Navbar />
                         <Outlet />
                     </div>
