@@ -3,7 +3,7 @@
 const Discover = () => {
     return (
         <div>
-            
+            This is discover
         </div>
     );
 };
