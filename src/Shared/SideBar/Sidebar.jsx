@@ -182,10 +182,66 @@ const Sidebar = () => {
 
 
                         <nav className="mt-4">
+                        <ul>
+                                <li>
+                                    <NavLink to="/"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 text-black bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        } ><TbVector></TbVector> Discover</NavLink>
+                                </li>
+                            </ul>
                             <ul>
-                                <li className="p-4 hover:bg-gray-800">Link 1</li>
-                                <li className="p-4 hover:bg-gray-800">Link 2</li>
-                                <li className="p-4 hover:bg-gray-800">Link 3</li>
+                                <li>
+                                    <NavLink
+                                        to="/uikit"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 text-black bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><IoIosMedkit></IoIosMedkit> UI Kits</NavLink>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/screens"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 text-black bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><CgScreenShot></CgScreenShot> Screens</NavLink>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/articles"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 text-black bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><FaCode></FaCode> Articles</NavLink>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/becomeSponsor"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 text-black bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><GiSelfLove></GiSelfLove> Become Sponsor</NavLink>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/hireFlutterDev"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 text-black bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><IoMdPeople></IoMdPeople> Hire Flutter Dev</NavLink>
+                                </li>
                             </ul>
                         </nav>
                     </div>

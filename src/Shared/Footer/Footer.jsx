@@ -5,7 +5,7 @@ const Footer = () => {
         <>
 
 
-            <footer className="flex items-center justify-between px-10">
+            <footer className="flex lg:flex-row flex-col items-center justify-between px-10">
 
                 <section className="space-y-5 my-10">
 

@@ -1,7 +1,7 @@
-
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BecomeSponsor = () => {
+const New = () => {
     return (
         <div className='mt-5'>
             Coming soon....
@@ -11,4 +11,4 @@ const BecomeSponsor = () => {
     );
 };
 
-export default BecomeSponsor;
+export default New;

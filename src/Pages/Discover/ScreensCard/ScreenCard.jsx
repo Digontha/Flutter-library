@@ -31,7 +31,7 @@ const ScreenCard = () => {
                     <ul>
                         <li>
                             <NavLink
-                                to="/Popular"
+                                to="/popular"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "bg-black rounded-full " : "border rounded-2xl p-[8px] px-5"
                                 }
@@ -43,19 +43,19 @@ const ScreenCard = () => {
                     <ul>
                         <li>
                             <NavLink
-                                to="/Popular"
+                                to="/new"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "bg-black rounded-full text-black" : "border rounded-2xl p-[8px] px-5"
                                 }
                             >
-                                Popular
+                                new
                             </NavLink>
                         </li>
                     </ul>
                     <ul>
                         <li>
                             <NavLink
-                                to="/Auth"
+                                to="/auth"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "bg-black rounded-full text-black" : "border rounded-2xl p-[8px] px-5"
                                 }
@@ -91,7 +91,7 @@ const ScreenCard = () => {
                     <ul>
                         <li>
                             <NavLink
-                                to="/topVerification"
+                                to="/verification"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "bg-black rounded-full text-black" : "border rounded-2xl p-[8px] px-5"
                                 }
