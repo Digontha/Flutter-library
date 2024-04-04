@@ -9,6 +9,7 @@ import { GiSelfLove } from "react-icons/gi";
 import { IoMdPeople } from "react-icons/io";
 import { IoReorderThree } from "react-icons/io5";
 import { GiCrossedBones } from "react-icons/gi";
+
 const Sidebar = () => {
 
 
@@ -32,52 +33,68 @@ const Sidebar = () => {
                         </section>
 
                         <section className="text-[14px]  mt-5 space-y-4 ">
-                            <div>
-                                <NavLink to="/"
-                                    className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "font-medium bg-slate-400" : "text-[#989898]"
-                                    }><p className="flex items-center gap-2"><TbVector></TbVector> Discover</p></NavLink>
-                            </div>
-                            <div>
-                                <NavLink
-                                    to="/uikit"
-                                    className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "font-medium bg-slate-400" : "text-[#989898]"
-                                    }
-                                ><p className="flex items-center gap-2"><IoIosMedkit></IoIosMedkit> UI Kits</p></NavLink>
-                            </div>
-                            <div>
-                                <NavLink
-                                    to="/screens"
-                                    className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "font-medium bg-slate-400" : "text-[#989898]"
-                                    }
-                                ><p className="flex items-center gap-2"><CgScreenShot></CgScreenShot> Screens</p></NavLink>
-                            </div>
-                            <div>
-                                <NavLink
-                                    to="/articles"
-                                    className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "font-medium bg-slate-400" : "text-[#989898]"
-                                    }
-                                ><p className="flex items-center gap-2"><FaCode></FaCode> Articles</p></NavLink>
-                            </div>
-                            <div>
-                                <NavLink
-                                    to="/becomeSponsor"
-                                    className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "font-medium bg-slate-400" : "text-[#989898]"
-                                    }
-                                ><p className="flex items-center gap-2"><GiSelfLove></GiSelfLove> Become Sponsor</p></NavLink>
-                            </div>
-                            <div>
-                                <NavLink
-                                    to="/hireFlutterDev"
-                                    className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "font-medium bg-[#d94949]" : "text-[#989898]"
-                                    }
-                                ><p className="flex items-center gap-2"><IoMdPeople></IoMdPeople> Hire Flutter Dev</p></NavLink>
-                            </div>
+                            <ul>
+                                <li>
+                                    <NavLink to="/"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        } ><TbVector></TbVector> Discover</NavLink>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/uikit"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><IoIosMedkit></IoIosMedkit> UI Kits</NavLink>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/screens"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><CgScreenShot></CgScreenShot> Screens</NavLink>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/articles"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><FaCode></FaCode> Articles</NavLink>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/becomeSponsor"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><GiSelfLove></GiSelfLove> Become Sponsor</NavLink>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <NavLink
+                                        to="/hireFlutterDev"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-2 bg-[#F5F5F5] py-1 px-1" : "flex items-center gap-2 text-[#989898] py-1 px-1"
+                                        }
+                                    ><IoMdPeople></IoMdPeople> Hire Flutter Dev</NavLink>
+                                </li>
+                            </ul>
+
                         </section>
 
                         <section className="mt-8">
@@ -90,7 +107,7 @@ const Sidebar = () => {
                                     <NavLink
                                         to="/signIn"
                                         className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "font-medium bg-[#d94949]" : "text-[#989898]"
+                                            isPending ? "pending" : isActive ? "font-medium " : "text-[#989898]"
                                         }
                                     ><p className="flex items-center gap-2 w-20">Sign in</p></NavLink>
                                     <p className="text-[#989898]">10</p>
@@ -99,7 +116,7 @@ const Sidebar = () => {
                                     <NavLink
                                         to="/chat"
                                         className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "font-medium bg-[#d94949]" : "text-[#989898]"
+                                            isPending ? "pending" : isActive ? "font-medium " : "text-[#989898]"
                                         }
                                     ><p className="flex items-center gap-2 w-20">Chat</p></NavLink>
                                     <p className="text-[#989898]">20</p>
@@ -108,37 +125,37 @@ const Sidebar = () => {
                                     <NavLink
                                         to="/onboarding"
                                         className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "font-medium bg-[#d94949]" : "text-[#989898]"
+                                            isPending ? "pending" : isActive ? "font-medium " : "text-[#989898]"
                                         }
                                     ><p className="flex items-center gap-2 w-20">Onboarding</p></NavLink>
-                                     <p className="text-[#989898]">30</p>
+                                    <p className="text-[#989898]">30</p>
                                 </div>
                                 <div className="flex gap-10">
                                     <NavLink
                                         to="/e-commerce"
                                         className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "font-medium bg-[#d94949]" : "text-[#989898]"
+                                            isPending ? "pending" : isActive ? "font-medium " : "text-[#989898]"
                                         }
                                     ><p className="flex items-center gap-2 w-20">E-commerce</p></NavLink>
-                                     <p className="text-[#989898]">24</p>
+                                    <p className="text-[#989898]">24</p>
                                 </div>
                                 <div className="flex gap-10">
                                     <NavLink
                                         to="/checkout"
                                         className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "font-medium bg-[#d94949]" : "text-[#989898]"
+                                            isPending ? "pending" : isActive ? "font-medium " : "text-[#989898]"
                                         }
                                     ><p className="flex items-center gap-2 w-20">Checkout</p></NavLink>
-                                     <p className="text-[#989898]">18</p>
+                                    <p className="text-[#989898]">18</p>
                                 </div>
                                 <div className="flex gap-10">
                                     <NavLink
                                         to="/error"
                                         className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "font-medium bg-[#d94949]" : "text-[#989898]"
+                                            isPending ? "pending" : isActive ? "font-medium " : "text-[#989898]"
                                         }
                                     ><p className="flex items-center gap-2 w-20">Error</p></NavLink>
-                                     <p className="text-[#989898]">3</p>
+                                    <p className="text-[#989898]">3</p>
                                 </div>
                             </div>
 

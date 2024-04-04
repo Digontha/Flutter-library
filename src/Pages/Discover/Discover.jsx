@@ -1,4 +1,5 @@
 import Header from "../../Component/Header/Header";
+import Footer from "../../Shared/Footer/Footer";
 import TemplateCard from "./TemplateCard/TemplateCard";
 
 
@@ -17,6 +18,8 @@ const Discover = () => {
             <div>
                 <TemplateCard></TemplateCard>
             </div>
+
+            
         </>
     );
 };
